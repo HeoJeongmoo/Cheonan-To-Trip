@@ -1,0 +1,1018 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "font";
+}
+
+body {
+    width:  auto;
+    height: auto;
+    overflow-x: hidden;
+}
+
+input {
+    display: none;
+}
+
+a {
+    text-decoration: none !important;
+    font-size: 22px;
+    color: #2F555B;
+}
+
+a:hover {
+    color: #f2636d;
+}
+
+@font-face {
+    font-family: "font";
+    src: url(../fonts/NotoSansCJKkr-hinted/NotoSansCJKkr-Medium.otf);
+}
+
+.container {
+    /* max-width: 1350px; */
+}
+
+.img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*  */
+
+header {
+    height: 50px;
+}
+
+.logo {
+    width: 100%;
+    height: 60px;
+    background-image: url(../img/logo.png);
+}
+
+ul {
+    width: 140px;
+    padding: 0;
+    text-align: center;
+}
+
+ul > ul {
+    margin-top: 3px;
+    line-height: 35px;
+    display: none;
+}
+
+ul:hover > ul {
+    display: block;
+}
+
+ul:hover {
+    display: block;
+}
+
+header a {
+    transition: .5s;
+    width: auto;
+    display: block;
+}
+
+header a:hover {
+    color: #f2636d;
+}
+
+/*  */
+.vi {
+    height: 750px;
+    margin-top: 100px;
+}
+
+.vi .left {
+    width: 62.1%;
+    height: 450px;
+    clip-path: polygon(0 0, 100% 0, 50% 100%, 0% 100%);
+    position: absolute;
+    margin-top: 100px;
+    left: 0;
+    background-color: #2F555B;
+}
+
+.vi .right {
+    padding: 0;
+    width: 62.1%;
+    height: 450px;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 0% 100%);
+    position: absolute;
+    right: 0;
+}
+
+.vi .title {
+    margin-top: 10px;
+    color: #f2636d;
+    font-size: 60px;
+    z-index: 1;
+    font-weight: 800;
+}
+
+p, span {
+    color: #2F555B;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.vi span {
+    font-size: 40px;
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+}
+
+.slide1 {
+    background-image: url(../img/image1.png);
+    animation: slide1 12s infinite;
+}
+
+.slide2 {
+    background-image: url(../img/image2.png);
+    animation: slide2 12s infinite;
+}
+
+.slide3 {
+    background-image: url(../img/image3.png);
+    background-position: bottom;
+    animation: slide3 12s infinite;
+}
+
+@keyframes slide1 {
+    0% { opacity: 1; z-index: -1; transform: scale(1);}
+    20% { opacity: 1; z-index: -2; transform: scale(1);}
+    33.333% { opacity: 0; z-index: -2; transform: scale(1);}
+    53.333% { opacity: 0; z-index: -2; transform: scale(1);}
+    66.666% { opacity: 0; z-index: -2; transform: scale(1);}
+    86.666% { opacity: 0; z-index: -1; transform: scale(1.2);}
+    93.666% { opacity: 1; z-index: -1; transform: scale(1.2);}
+    100% { opacity: 1; z-index: -1; transform: scale(1);}
+}
+
+@keyframes slide2 {
+    0% { opacity: 0; z-index: -2; transform: scale(1);}
+    20% { opacity: 0; z-index: -1; transform: scale(1.2);}
+    26% { opacity: 1; z-index: -1; transform: scale(1.2);}
+    33.333% { opacity: 1; z-index: -2; transform: scale(1);}
+    53.333% { opacity: 1; z-index: -2; transform: scale(1);}
+    66.666% { opacity: 1; z-index: -2; transform: scale(1);}
+    86.666% { opacity: 0; z-index: -2; transform: scale(1);}
+    100% { opacity: 0; z-index: -2; transform: scale(1);}
+}
+
+@keyframes slide3 {
+    0% { opacity: 0; z-index: -2; transform: scale(1);}
+    20% { opacity: 0; z-index: -2; transform: scale(1);}
+    33.333% { opacity: 0; z-index: -2; transform: scale(1);}
+    53.333% { opacity: 0; z-index: -1; transform: scale(1.2);}
+    59.333% { opacity: 1; z-index: -1; transform: scale(1.2);}
+    66.666% { opacity: 1; z-index: -2; transform: scale(1);}
+    86.666% { opacity: 1; z-index: -2; transform: scale(1);}
+    100% { opacity: 0; z-index: -2; transform: scale(1);}
+}
+
+.tex-slides .tex-slide {
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+}
+
+.tex-slide1 {
+    animation: 12s tex-slide1 infinite;
+}
+
+.tex-slide2 {
+    animation: 12s tex-slide2 infinite;
+}
+
+.tex-slide3 {
+    animation: 12s tex-slide3 infinite; 
+}
+
+
+@keyframes tex-slide1 {
+    0% {opacity: 1;}
+    15% {opacity: 1;}
+    20% {opacity: 0;}
+    95% {opacity: 0;}
+}
+
+@keyframes tex-slide2 {
+    0% { opacity: 0;}
+    28.333% { opacity: 0;}
+    33.333% { opacity: 1;}
+    48.333% { opacity: 1;}
+    53.333% { opacity: 0;}
+    100% { opacity: 0;}
+}
+
+@keyframes tex-slide3 {
+    0% { opacity: 0;}
+    61.666% { opacity: 0;}
+    66.666% { opacity: 1;}
+    81.666% { opacity: 1;}
+    86.666% { opacity: 0;}
+    100% { opacity: 0;}
+}
+
+.vi .progress {
+    padding: 0 !important;
+    margin-top: 70px;
+    width: 250px;
+    height: 10px;
+    background-color: #f2636d;
+    z-index: 1;
+}
+
+.vi .progress-bar {
+    background-color: #fff;
+    animation: 12s infinite prog;
+}
+
+@keyframes prog {
+    0% {width: 100%;}
+    19.9% {width: 100%;}
+    20% {width: 0%;}
+    33.333% {width: 100%;}
+    53.332% {width: 100%;}
+    53.333% {width: 0%;}
+    66.665% {width: 100%;}
+    86.665% {width: 100%;}
+    86.666% {width: 0;}
+    100% {width: 100%;}
+}
+
+.persent {
+    width: 100px;
+    height: 54px;
+    margin-top: 49px;
+}
+
+.per {
+    width: 100px;
+    height: 54px;
+    overflow-y: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.per .pp { 
+    animation: pp 12s infinite; 
+    animation-timing-function: steps(100, end); 
+    animation-fill-mode: forwards; 
+    display: grid;
+}
+
+.per p { 
+    color: #f2636d;
+    font-size: 20px;
+    line-height: 50px;
+}
+
+@keyframes pp {
+    0% { display: grid; transform: translateY(calc(132 * -50px));}
+    19.9% { display: grid; transform: translateY(calc(132 * -50px));}
+    20% { display: grid; transform: translateY(calc(0 * -50px));}
+    33.333% { display: grid; transform: translateY(calc(132 * -50px));}
+    53.332% { display: grid; transform: translateY(calc(132 * -50px));}
+    53.333% { display: grid; transform: translateY(calc(0 * -50px));}
+    66.666% { display: grid; transform: translateY(calc(132 * -50px));}
+    86.665% { display: grid; transform: translateY(calc(132 * -50px));}
+    86.666% { display: grid; transform: translateY(calc(0 * -50px));}
+    100% { display: grid; transform: translateY(calc(132 * -50px));}
+}
+
+.fa-group {
+    z-index: 1;
+    margin-top: 57px;
+    width: 55px;
+}
+
+.fa {
+    position: absolute;
+    font-size: 35px;
+    color: #fff;
+}
+
+.vi label {
+    display: none;
+}
+ 
+#play:checked ~ .d-flex .fa-group .pause, #pause:checked ~ .d-flex .fa-group .play {
+    display: block;
+}
+
+#pause:checked ~ .right .slides .img, #pause:checked ~ .tex-slides .tex-slide, #pause:checked ~ .d-flex .progress .progress-bar, #pause:checked ~ .d-flex .persent .per .pp {
+    animation-play-state: paused;
+}
+
+.line {
+    height: 250px;
+    margin: 450px 0 0 250px;
+    width: 2px;
+    padding: 0;
+    animation: ani 9s infinite;
+    background-color: #f2636d;
+}
+
+.tex {
+    animation: ani cubic-bezier(0.6, 0.04, 0.98, 0.335) infinite;
+    right: 290px;
+    bottom: 100px;
+    width: 600px;
+}
+
+@keyframes ani {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.05);}
+    100% {transform: scale(1);}
+}
+
+.tex span {
+    font-size: 30px;
+}
+
+.con1, .con2, .con3, .con4, .sub1 {
+    margin: 80px 0 80px 0;
+    height: 650px;
+}
+
+section .tit {
+    font-size: 40px;
+    color: #2F555B;
+}
+
+.con1 .col-6 {
+    padding-top: 80px;
+}
+
+.zone {
+    padding-top: 50px;
+}
+
+.block {
+    width: 30px;
+    height: 30px;
+}
+
+.group1 .block {
+    background-color: cadetblue;
+}
+
+.group2 .block {
+    background-color:tomato;
+}
+
+.group3 .block {
+    background-color:yellowgreen;
+}
+
+.con1 span, .con3 span, .sub1 span {
+    font-weight: 800;
+}
+
+.con1 label, .con2 label, .sub1 label {
+    width: 180px;
+    text-align: center;
+    height: 35px;
+    padding-top: 5px;
+    color: #fff;
+    transition: .5s;
+    border: 1px solid #2F555B;
+    background-color: transparent;
+    color: #2F555B;
+}
+
+.con1 label:hover, .con2 label:hover, .sub1 label:hover {
+    background-color: #2F555B;
+    color: #fff;
+}
+
+.con1 .zone > .d-flex {
+    margin-top: 50px;
+}
+
+@property --a {
+    syntax: '<percentage>';
+    initial-value: 20%;
+    inherits: false;
+}
+
+@property --b {
+    syntax: '<percentage>';
+    initial-value: 40%;
+    inherits: false;
+}
+
+@property --c {
+    syntax: '<percentage>';
+    initial-value: 100%;
+    inherits: false;
+}
+
+.check1 {
+    height: 500px;
+    transform: rotateY(-180deg) rotate(180deg);
+}
+
+.gr {
+    bottom: 0;
+    border: 0 solid #2F555B;
+    border-width: 2px 2px 0px 0px;
+}
+
+.check1 .gr > div:nth-child(1) {
+    background-color: cadetblue;
+    height: var(--a);
+    width: 60px;
+}
+
+.check1 .gr > div:nth-child(2) {
+    background-color:tomato;
+    height: var(--b);
+    width: 60px;
+}
+
+.check1 .gr > div:nth-child(3) {
+    background-color:yellowgreen;
+    height: var(--c);
+    width: 60px;
+}
+
+.check2 div {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: conic-gradient(yellowgreen var(--a), tomato 0 var(--b), cadetblue 0 var(--c), #fff 0);
+}
+
+.vi1, .vi2, .check1, .check2 {
+    display: none;
+}
+
+#check1:checked ~.col-6 .zone .d-flex .group .vi1,
+#check2:checked ~.col-6 .zone .d-flex .group .vi2,
+#check1:checked ~.col-5 .vi1, 
+#check2:checked ~.col-5 .vi2, 
+#check1:checked ~.col-5 .check1, 
+#check2:checked ~.col-5 .check2 {
+    display: block;
+}
+
+#check1:checked ~.col-5 .check1 div,
+#check2:checked ~.col-5 .check2 div {
+    animation: per 1s linear;
+}
+
+#check1:checked ~ .col-6 .zone label:nth-child(1),
+#check2:checked ~ .col-6 .zone label:nth-child(2) {
+    background-color: #2F555B;
+    color: #fff;
+}
+
+#table1:checked ~ .w-100 .label-group label:nth-child(1),
+#table2:checked ~ .w-100 .label-group label:nth-child(2),
+#table3:checked ~ .w-100 .label-group label:nth-child(3) {
+    background-color: #2F555B;
+    color: #fff;
+}
+
+@keyframes per {
+    0% {
+        --a: 0%;
+        --b: 0%;
+        --c: 0%;
+    }
+    20% { --a: 20%; }
+    40% { --b: 40%; }
+    100% { --c: 100%; }
+}
+
+.con2 {
+    height: 800px;
+    padding: 80px 0 80px 0;
+    background-color: #E3E1E2;
+}
+
+table {
+    width: 100%;
+}
+
+.con2 .tri {
+    width: 250px;
+    height: 250px;
+    bottom: -30px;
+    right: 0;
+    background-image: url(../img/img1.png);
+}
+
+thead td {
+    font-size: 21px;
+}
+
+tr {
+    border-bottom: 2px solid #2F555B;
+}
+
+td {
+    color: #2F555B;
+    padding: 30px;
+    font-size: 18px;
+}
+
+td:nth-child(1) {
+    width: 238px;
+}
+
+td:nth-child(2) {
+    width: 867px;
+}
+
+td:nth-child(3) {
+    width: 220px;
+    padding: 20px;
+}
+
+.con2 label {
+    width: 150px;
+    height: 35px;
+    padding-top: 5px;
+    text-align: center;
+    border: 1px solid #2F555B;
+}
+
+table {
+    display: none;
+}
+
+#table1:checked ~ .col-12 .table1, 
+#table2:checked ~ .col-12 .table2, 
+#table3:checked ~ .col-12 .table3{
+    display: block;
+}
+
+table button, .con3 button, .sub1 button {
+    color: #F2636C;
+    height: 35px;
+    width: 100px;
+    background-color: transparent;
+    border: #F2636C solid 2px;
+    transition: .5s;
+}
+
+table button:hover, .con3 button:hover, .sub1 button:hover {
+    background-color: #f2636d;
+    color: #E3E1E2;
+}
+
+.con3 {
+    margin: 180px 0 180px 0;
+}
+
+.con3 .stage {
+    padding: 0 120px;
+    height: 200px;
+    perspective: 1000px;
+    -webkit-box-reflect: below -100px linear-gradient(transparent, rgba(0, 0, 0, .5));
+}
+
+.con3 .control {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transform: translateZ(-1000px) rotateZ(0deg);
+    animation: rotate 30s linear infinite;
+}
+
+.con3 .control .imgs {
+    width: 500px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-40%, -40%);
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.con3 .control .img {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    transform-style: preserve-3d;
+    transform-origin: 50% 50% 0;
+    background-position: center;
+    background-size: cover;
+}
+
+.con3 .control .img1 {
+    background-image: url(../img/갤러리영역/1경_독립기념관.jpg);
+    transform: rotateY(80deg) translateZ(650px);
+}
+
+.con3 .control .img2 {
+    background-image: url(../img/갤러리영역/2경\ 유관순열사\ 사적지.png);
+    transform: rotateY(125deg) translateZ(650px);
+}
+
+.con3 .control .img3 {
+    background-image: url(../img/갤러리영역/3경\ 천안삼거리공원.png);
+    transform: rotateY(170deg) translateZ(650px);
+}
+
+.con3 .control .img4 {
+    background-image: url(../img/갤러리영역/4경\ 태조산왕건길과\ 청동대좌불.jpg);
+    transform: rotateY(215deg) translateZ(650px);
+}
+
+.con3 .control .img5 {
+    background-image: url(../img/갤러리영역/5경\ 아라리오조각광장.png);
+    transform: rotateY(260deg) translateZ(650px);
+}
+
+.con3 .control .img6 {
+    background-image: url(../img/갤러리영역/6경\ 성성호수공원.png);
+    transform: rotateY(305deg) translateZ(650px);
+}
+
+.con3 .control .img7 {
+    background-image: url(../img/갤러리영역/7경\ 광덕산.jpg);
+    transform: rotateY(350deg) translateZ(650px);
+}
+
+.con3 .control .img8 {
+    background-image: url(../img/갤러리영역/8경\ 국보\ 봉선홍경사갈기비.png);
+    transform: rotateY(395deg) translateZ(650px);
+}
+
+@keyframes rotate {
+    0% { transform: translateZ(-2000px) rotateY(0deg);}
+    50% { transform: translateZ(-2000px) rotateY(360deg);}
+    100% { transform: translateZ(-2000px) rotateY(720deg);}
+}
+
+.con3 .gall {
+    --g: 8px;
+    --s: 250px;
+
+    width: 230px;
+    height: 230px;
+    display: grid;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.con3 .gall .img {
+    grid-area: 1/1;
+    width: 230px;
+    border-radius: 50%;
+    transform: translate(var(--x, 0), var(--y, 0));
+    z-index: 0;
+    cursor: pointer;
+    transition: .3s;
+    background-size: center;
+    background-size: cover;
+}
+
+.con3 .gall .img:hover {
+    --i: 1;
+    z-index: 1;
+    transition: .3s, clip-path .3s .3s;
+}
+
+.con3 .gall:hover .img {
+    transform: translate(0, 0);
+}
+
+.con3 .gall .img:nth-child(1) {
+    clip-path: polygon(50% 50%,
+      calc(50% * var(--i, 0)) calc(120% * var(--i, 0)),
+      0 calc(100% * var(--i, 0)),
+      0 0,
+      100% 0,
+      100% calc(100% * var(--i, 0)),
+      calc(100% - 50% * var(--i, 0)) calc(120% * var(--i,0))
+    );
+    --y: calc(-1 * var(--g));
+}
+
+.con3 .gall .img:nth-child(2) {
+    clip-path: polygon(50% 50%,
+      calc(100% - 120% * var(--i, 0)) calc(50% * var(--i, 0)),
+      calc(100% - 100% * var(--i, 0)) 0,
+      100% 0,
+      100% 100%,
+      calc(100% - 100% * var(--i, 0)) 100%,
+      calc(100% - 120% * var(--i, 0)) calc(100% - 120% * var(--i, 0))
+    );
+    --x: var(--g);
+}
+
+.con3 .gall .img:nth-child(3) {
+    clip-path: polygon(50% 50%,
+      calc(100% - 50% * var(--i, 0)) calc(100% - 120% * var(--i, 0)),
+      100% calc(100% - 120% * var(--i, 0)),
+      100% 100%,
+      0 100%,
+      0 calc(100% - 100% * var(--i, 0)),
+      calc(50% * var(--i, 0)) calc(100% - 120% * var(--i, 0))
+    );
+    --y: var(--g);
+}
+
+.con3 .gall .img:nth-child(4) {
+    clip-path: polygon(50% 50%,
+      calc(120% * var(--i, 0)) calc(50% * var(--i, 0)),
+      calc(100% * var(--i, 0)) 0,
+      0 0,
+      0 100%,
+      calc(100% * var(--i, 0)) 100%,
+      calc(120% * var(--i, 0)) calc(100% - 50% * var(--i, 0)) 
+    );
+    --x: calc(-1 * var(--g));
+}
+
+.con3 .gall .img1 { background-image: url(../img/갤러리영역/1경_독립기념관.jpg);}
+.con3 .gall .img2 { background-image: url(../img/갤러리영역/2경\ 유관순열사\ 사적지.png);}
+.con3 .gall .img3 { background-image: url(../img/갤러리영역/3경\ 천안삼거리공원.png);}
+.con3 .gall .img4 { background-image: url(../img/갤러리영역/4경\ 태조산왕건길과\ 청동대좌불.jpg);}
+.con3 .gall .img5 { background-image: url(../img/갤러리영역/5경\ 아라리오조각광장.png);}
+.con3 .gall .img6 { background-image: url(../img/갤러리영역/6경\ 성성호수공원.png);}
+.con3 .gall .img7 { background-image: url(../img/갤러리영역/7경\ 광덕산.jpg);}
+.con3 .gall .img8 { background-image: url(../img/갤러리영역/8경\ 국보\ 봉선홍경사갈기비.png);}
+
+footer {
+    height: 200px;
+    background-color: #E3E1E2;
+}
+
+footer .tri1 {
+    left: 0;
+    top: -20px;
+    transform: rotate(180deg);
+}
+
+.tri1 {
+    background-image: url(../img/img2.png);
+}
+
+.tri2 {
+    right: 0;
+    bottom: 0px;
+    background-image: url(../img/img3.png);
+}
+
+.tri {
+    width: 180px !important;
+    height: 180px !important;
+}
+
+footer .d-flex a {
+    font-size: 20px;
+    transition: .5s;
+}
+
+footer p {
+    text-align: end;
+}
+
+footer .line {
+    position: absolute;
+    height: 100px;
+    left: 52%;
+    background-color: #2F555B;
+} 
+
+footer .fab {
+    color: #2F555B;
+    margin-left: 10px;
+    font-size: 25px;
+    transition: .5s;
+}
+
+.fab:hover {
+    transform: rotate(180deg);
+}
+
+.loding {
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    font-size: 30px;
+    background-color: rgba(0, 0, 0, .5);
+    animation: display 2s forwards;
+}
+
+.loding .progress {
+    width: 500px;
+    margin: 10px auto 0 auto;
+}
+
+.loding .progress-bar {
+    animation: loding 1.5s forwards;
+}
+
+@keyframes display {
+    0% {display: flex;}
+    100% {display: none;}
+}
+
+@keyframes loding {
+    0% {width: 0;}
+    100% {width: 100%;}
+}
+
+.loding .not {
+    animation: not 1.5s forwards;
+}
+
+@keyframes not {
+    0% {display: block;}
+    100% {display: none;}
+}
+
+.loding .com {
+    animation: com 1.5s forwards;
+}
+
+.loding .com, .loding .not {
+    text-align: center;
+} 
+
+@keyframes com {
+    0% {display: none;}
+    99.9% {display: none;}
+    100% {display: block;}
+}
+
+.position-fixed {
+    bottom: 250px;
+    z-index: 1;
+    right: 50px;
+}
+
+.position-fixed .cu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin: 0;
+}
+
+.position-fixed .cube-container {
+    perspective: 800px;
+}
+
+.position-fixed .cube {
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transform: rotateX(45deg) rotateY(45deg);
+    animation: rotateCube 5s linear infinite;
+}
+
+.position-fixed .face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #2F555B;
+}
+
+.face:nth-child(1) { transform: translateZ(50px); }
+.face:nth-child(2) { transform: rotateY(180deg) translateZ(50px); }
+.face:nth-child(3) { transform: rotateY(90deg) translateZ(50px); }
+.face:nth-child(4) { transform: rotateY(-90deg) translateZ(50px); }
+.face:nth-child(5) { transform: rotateX(90deg) translateZ(50px); }
+.face:nth-child(6) { transform: rotateX(-90deg) translateZ(50px); }
+
+@keyframes rotateCube {
+    0% { transform: rotateX(0) rotateY(0) rotateZ(0);}
+    100% { transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);}
+}
+
+.face {
+    text-align: center;
+    padding-top: 38px;
+}
+
+.face a {
+    color: #E3E1E2;
+    font-size: 17px;
+    text-align: center;
+}
+
+.sub1 {
+    height: auto;
+}
+
+.sub1 .option1 {height: 1700px;}
+.sub1 .option2 {height: 1400px;}
+
+.sub1 .box {
+    width: 400px;
+    height: 740px;
+    margin-bottom: 50px;
+}
+
+.box .img {
+    height: 250px;
+}
+
+.box .img1 {background-image: url(../img/갤러리영역/1경_독립기념관.jpg);}
+.box .img2 {background-image: url(../img/갤러리영역/2경\ 유관순열사\ 사적지.png);}
+.box .img3 {background-image: url(../img/갤러리영역/3경\ 천안삼거리공원.png);}
+.box .img4 {background-image: url(../img/갤러리영역/4경\ 태조산왕건길과\ 청동대좌불.jpg);}
+.box .img5 {background-image: url(../img/갤러리영역/5경\ 아라리오조각광장.png);}
+.box .img6 {background-image: url(../img/갤러리영역/6경\ 성성호수공원.png);}
+.sub1 .tex-line {
+    height: 2px;
+    background-color: #2F555B;
+}
+
+
+.sub1 button {
+    margin-left: 150px;
+}
+
+.sub1 .mt-4 {
+    height: 380px;
+    transition: height 0.5s ease;
+}
+
+.box:nth-child(1):hover .mt-4 {height: 297px;}
+.box:nth-child(2):hover .mt-4 {height: 243px;}
+.box:nth-child(3):hover .mt-4 {height: 378px;}
+.box:nth-child(4):hover .mt-4 {height: 297px;}
+.box:nth-child(5):hover .mt-4 {height: 297px;}
+.box:nth-child(6):hover .mt-4 {height: 243px;}
+.sub1 .col-12{
+    display: none;
+}
+
+#option1:checked ~ .option1 , #option2:checked ~ .option2 {
+    display: block;
+}
+
+#option1:checked ~ .w-100 .group label:nth-child(1), 
+#option2:checked ~ .w-100 .group label:nth-child(2) {
+    background-color: #2F555B;
+    color: #fff;
+}
+
+.sub1 .tri2 {
+    top: -20px;
+    left: -20px;
+    z-index: -1;
+    animation: ani 9s infinite;
+    transform: rotate(180deg) !important;
+}
+
+.sub1 .tri1 {
+    bottom: -80px;
+    right: -20px;
+    z-index: -1;
+    animation: ani 9s infinite;
+}
+
+.option2 .img {height: 400px; width: 270px;}
+.option2 .img1 {background-image: url(../img/독립기념관/image1.jpg);}
+.option2 .img2 {background-image: url(../img/독립기념관/image2.jpg);}
+.option2 .img3 {background-image: url(../img/독립기념관/image3.jpg);}
+
+.sub1 .justify-content-start .ms-5 {
+    margin-top: 110px;
+}
+
+footer .logo {
+    height: 55px;
+    width: 190px;
+}
+
+@media screen and (max-width: 1600px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .stage {
+        padding: 0 50px !important;
+    }
+}
